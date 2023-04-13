@@ -1,0 +1,15 @@
+[29-Jan-2022 12:07:33 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: Access denied for user 'root'@'localhost' (using password: YES) in /home/jammuin/public_html/shopkart.gq/config/cloudinary/index.php:13
+Stack trace:
+#0 /home/jammuin/public_html/shopkart.gq/config/cloudinary/index.php(13): mysqli_connect()
+#1 {main}
+  thrown in /home/jammuin/public_html/shopkart.gq/config/cloudinary/index.php on line 13
+[17-Mar-2022 13:30:21 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: Access denied for user 'root'@'localhost' (using password: YES) in /home/jammuin/public_html/shopkart.gq/config/cloudinary/index.php:13
+Stack trace:
+#0 /home/jammuin/public_html/shopkart.gq/config/cloudinary/index.php(13): mysqli_connect()
+#1 {main}
+  thrown in /home/jammuin/public_html/shopkart.gq/config/cloudinary/index.php on line 13
+[03-May-2022 14:48:57 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: Access denied for user 'root'@'localhost' (using password: YES) in /home/jammuin/public_html/shopkart.gq/config/cloudinary/index.php:13
+Stack trace:
+#0 /home/jammuin/public_html/shopkart.gq/config/cloudinary/index.php(13): mysqli_connect()
+#1 {main}
+  thrown in /home/jammuin/public_html/shopkart.gq/config/cloudinary/index.php on line 13

@@ -1,0 +1,177 @@
+#clear { display: inline; }
+
+// Colors
+$star_on: royalblue;
+$star_off: #ccf;
+$star_bdr: darkblue;
+
+// Breakpoints / Sizes
+$max_sm: 479px; // @media(max-width: $max_sm)
+$min_lg: 768px; // @media(min-width: $min_lg)
+
+$star_size_sm: 36px;
+$star_big_sm: 48px;
+$star_top_sm: -10px;
+$star_left_sm: -2px;
+
+$star_size: 48px;
+$star_big: 64px;
+$star_top: -13px;
+$star_left: -1.5px;
+
+$star_size_lg: 64px;
+$star_big_lg: 80px;
+$star_top_lg: -14.5px;
+$star_left_lg: 0px;
+
+// Component container.
+#stars_rating {
+  margin: 0; padding: 0;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+  p {
+    text-align:center;
+    font-size: 20px;
+    margin: 0;
+    @media(max-width:$max_sm) {
+      &.heading { font-size: 18px; }
+      font-size: 15px;
+    }
+  }
+  
+  // stars container default state.
+  .stars {
+    display: inline-flex;
+    flex-flow: row nowrap;
+    max-width: 360px;
+    align-items: center;
+    justify-content: center; 
+    margin: 0 auto;
+    padding: 0;
+    margin-top: -8px;
+  }
+  
+  // star default state
+  .stars .star {
+    position: relative;
+    color: $star_off;
+    font-size: $star_size;
+    cursor: pointer;
+    padding: 0 5px;
+    &:after {
+      content: '★';
+      position: absolute;
+      transform: translateX(-100%);
+      top: 0px;
+      font-size: $star_size;
+    }
+    @media(min-width: $min_lg) {
+      padding: 0 7px;
+      font-size: $star_size_lg;
+      &:after {
+        font-size: $star_size_lg;
+      }
+    }
+    @media(max-width: $max_sm) {
+      padding: 0 3px;
+      font-size: $star_size_sm;
+      &:after {
+        font-size: $star_size_sm;
+      }
+    }
+  }
+    
+  // rated star default
+  .stars .star.rated {
+    color: $star_on;
+    &:before {
+      color: $star_bdr;
+      content: '★';
+      position: absolute;
+      left: $star_left;
+      top: $star_top;
+      font-size: $star_big;
+      @media(min-width: $min_lg) {
+        left: $star_left_lg;
+        top: $star_top_lg;
+        font-size: $star_big_lg;
+      }
+      @media(max-width: $max_sm) {
+        left: $star_left_sm;
+        top: $star_top_sm;
+        font-size: $star_big_sm;
+      }
+    }
+  }
+
+  // stars container: hovered state. (stars on until after hovered star)
+  .stars:hover {
+    .star {
+      color: $star_on;
+    }
+    .star:hover ~ * {
+      color: $star_off;
+    }
+  }
+  
+  // stars container when a rating is selected.
+  .stars.rated .star {
+    &:before {
+      color: $star_bdr;
+      content: '★';
+      position: absolute;
+      left: $star_left;
+      top: $star_top;
+      font-size: $star_big;
+      @media(min-width: $min_lg) {
+        left: $star_left_lg;
+        top: $star_top_lg;
+        font-size: $star_big_lg;
+      }
+      @media(max-width: $max_sm) {
+        left: $star_left_sm;
+        top: $star_top_sm;
+        font-size: $star_big_sm;
+      }
+    }
+    &:after {
+      color: $star_on;
+    }
+  }
+  .stars.rated .star.rated ~ * {
+    &:before {
+      display: none;
+    }
+    &:after {
+      color: $star_off;
+    }
+  }
+  
+  // stars container when a rating is selected and user is hovering
+  .stars.rated:hover {
+    .star {
+      color: $star_on;
+      &:after {
+        color: $star_on;
+      }
+    }
+    .star:hover ~ * {
+      color: $star_off;
+      &:after {
+        color: $star_off;
+      }
+    }
+  }
+  .rates {
+    span.avg {
+      &:before {
+        content: "Average: ";
+        @media(max-width: $max_sm) {
+          content: "Avg: ";
+        }
+      }
+    }
+  }
+}

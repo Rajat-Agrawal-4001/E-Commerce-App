@@ -1,0 +1,15 @@
+[29-Jan-2022 19:32:01 UTC] PHP Warning:  require(vendor/autoload.php): Failed to open stream: No such file or directory in /home/jammuin/public_html/shopkart.gq/config/PHPMailer/get_oauth_token.php on line 61
+[29-Jan-2022 19:32:01 UTC] PHP Fatal error:  Uncaught Error: Failed opening required 'vendor/autoload.php' (include_path='.:/opt/alt/php81/usr/share/pear:/opt/alt/php81/usr/share/php:/usr/share/pear:/usr/share/php') in /home/jammuin/public_html/shopkart.gq/config/PHPMailer/get_oauth_token.php:61
+Stack trace:
+#0 {main}
+  thrown in /home/jammuin/public_html/shopkart.gq/config/PHPMailer/get_oauth_token.php on line 61
+[29-Jan-2022 19:47:34 UTC] PHP Warning:  require(vendor/autoload.php): Failed to open stream: No such file or directory in /home/jammuin/public_html/shopkart.gq/config/PHPMailer/get_oauth_token.php on line 61
+[29-Jan-2022 19:47:34 UTC] PHP Fatal error:  Uncaught Error: Failed opening required 'vendor/autoload.php' (include_path='.:/opt/alt/php81/usr/share/pear:/opt/alt/php81/usr/share/php:/usr/share/pear:/usr/share/php') in /home/jammuin/public_html/shopkart.gq/config/PHPMailer/get_oauth_token.php:61
+Stack trace:
+#0 {main}
+  thrown in /home/jammuin/public_html/shopkart.gq/config/PHPMailer/get_oauth_token.php on line 61
+[29-Jan-2022 20:20:08 UTC] PHP Warning:  require(vendor/autoload.php): Failed to open stream: No such file or directory in /home/jammuin/public_html/shopkart.gq/config/PHPMailer/get_oauth_token.php on line 61
+[29-Jan-2022 20:20:08 UTC] PHP Fatal error:  Uncaught Error: Failed opening required 'vendor/autoload.php' (include_path='.:/opt/alt/php81/usr/share/pear:/opt/alt/php81/usr/share/php:/usr/share/pear:/usr/share/php') in /home/jammuin/public_html/shopkart.gq/config/PHPMailer/get_oauth_token.php:61
+Stack trace:
+#0 {main}
+  thrown in /home/jammuin/public_html/shopkart.gq/config/PHPMailer/get_oauth_token.php on line 61

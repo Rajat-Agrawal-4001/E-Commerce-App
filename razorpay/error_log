@@ -1,0 +1,2 @@
+[18-Mar-2023 11:55:46 Asia/Kolkata] PHP Warning:  foreach() argument must be of type array|object, bool given in /home/jammuin/public_html/dizital.org/razorpay/digital_product_pay.php on line 85
+[18-Mar-2023 12:19:06 Asia/Kolkata] PHP Warning:  foreach() argument must be of type array|object, bool given in /home/jammuin/public_html/dizital.org/razorpay/digital_product_pay.php on line 85
